@@ -18,8 +18,7 @@
         "symfony/templating": "4.4.*",
         "symfony/yaml": "4.4.*"
     },
-    "target-dir": "Onest/VerticalLeftRightTimelineBundle",
     "autoload": {
-        "psr-0": { "Onest\\VerticalLeftRightTimelineBundle": "" }
+        "psr-4": { "Onest\\VerticalLeftRightTimelineBundle": "" }
     }
 }
