@@ -12,22 +12,21 @@ https://codepen.io/cplepage/pen/EozVXL
 
 ### composer.json
 
-``
-{
-    "require": {
-        "prawas/vertical-timeline-bundle": "dev-master"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/prawas/vertical-timeline"
-        }
-    ]
-}
-``
+    {
+        "require": {
+            "prawas/vertical-timeline-bundle": "dev-master"
+        },
+        "repositories": [
+            {
+                "type": "vcs",
+                "url": "https://github.com/prawas/vertical-timeline"
+            }
+        ]
+    }
 
 ### cli
 
-``
-php bin/console assets:install
-``
+    composer update
+    php bin/console assets:install
+    php bin/console cache:clear
+    php bin/console doctrine:schema:update --force
