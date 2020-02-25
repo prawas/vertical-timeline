@@ -1,0 +1,19 @@
+@import './base.css';
+
+.vertical-left-right-timeline {
+    background-color: #fff;
+    color: #000;
+}
+.vertical-left-right-timeline .circle {
+    background-color: #000;
+    color: #fff;
+}
+.vertical-left-right-timeline-text-row .col-2::after {
+    border-left: 3px solid #000;
+}
+.vertical-left-right-timeline-line-row hr {
+    border-top: 3px solid #000;
+}
+.vertical-left-right-timeline-line-row .corner {
+    border: 3px solid #000;
+}

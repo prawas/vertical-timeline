@@ -1,0 +1,76 @@
+.vertical-left-right-timeline {
+    height: 100%;
+}
+.vertical-left-right-timeline .circle {
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50%;
+    max-height: 50px;
+    z-index: 2;
+}
+.vertical-left-right-timeline-text-row {
+    display: flex;
+}
+.vertical-left-right-timeline-text-row .col-2 {
+    display: inline-flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+.vertical-left-right-timeline-text-row .col-2::after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+}
+.vertical-left-right-timeline-text-row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}
+.vertical-left-right-timeline-text-row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+}
+.vertical-left-right-timeline-text-row .col-2.full.left::after {
+    height: 100%;
+    left: 50%;
+}
+.vertical-left-right-timeline-text-row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
+}
+.vertical-left-right-timeline-line-row div {
+    padding: 0;
+    height: 40px;
+}
+.vertical-left-right-timeline-line-row hr {
+    margin: 0;
+    top: 17px;
+    position: relative;
+}
+.vertical-left-right-timeline-line-row .col-2 {
+    display: flex;
+    overflow: hidden;
+}
+.vertical-left-right-timeline-line-row .corner {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+.vertical-left-right-timeline-line-row .top-right {
+    left: 50%;
+    top: -50%;
+}
+.vertical-left-right-timeline-line-row .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+.vertical-left-right-timeline-line-row .top-left {
+    left: -50%;
+    top: -50%;
+}
+.vertical-left-right-timeline-line-row .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+}

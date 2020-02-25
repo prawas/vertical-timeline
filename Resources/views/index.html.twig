@@ -1,0 +1,15 @@
+{% for couple in items|batch(2) %}
+    {% for key, item in couple %}
+        {% if (key == 0) %}
+            {% include '@VerticalLeftRightTimeline/first.html.twig' with {item: item} %}
+        {% elseif (key == items|length - 1 and key is even) %}
+            {% include '@VerticalLeftRightTimeline/last-even.html.twig' with {item: item} %}
+        {% elseif (key == items|length - 1 and key is odd) %}
+            {% include '@VerticalLeftRightTimeline/last-odd.html.twig' with {item: item} %}
+        {% elseif (key is even) %}
+            {% include '@VerticalLeftRightTimeline/even.html.twig' with {item: item} %}
+        {% elseif (key is odd) %}
+            {% include '@VerticalLeftRightTimeline/odd.html.twig' with {item: item} %}
+        {% endif %}
+    {% endfor %}
+{% endfor %}
