@@ -10,8 +10,9 @@ https://codepen.io/cplepage/pen/EozVXL
 
 ## Установка
 
+### composer.json
+
 ``
-# composer.json
 {
     "require": {
         "prawas/vertical-timeline-bundle": "dev-master"
@@ -24,6 +25,8 @@ https://codepen.io/cplepage/pen/EozVXL
     ]
 }
 ``
+
+### cli
 
 ``
 php bin/console assets:install

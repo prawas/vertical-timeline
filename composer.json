@@ -20,6 +20,6 @@
     },
     "target-dir": "Onest/VerticalLeftRightTimelineBundle",
     "autoload": {
-        "psr-4": { "Onest\\VerticalLeftRightTimelineBundle": "" }
+        "psr-0": { "Onest\\VerticalLeftRightTimelineBundle": "" }
     }
 }
