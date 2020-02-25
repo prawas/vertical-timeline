@@ -1,14 +1,13 @@
 # Vertical Timeline Bundle
 
-Интегрирует в сайт с Sonata Admin CSS Timeline от CP Lepag.
+The VerticalLeftRightTimelineBundle integrates the [CSS Timeline from CP Lepag](https://codepen.io/cplepage/pen/EozVXL) into SonataAdmin.
 
-https://codepen.io/cplepage/pen/EozVXL
 
 ![timeline frontend](https://prawas.s3.amazonaws.com/timeline-front.png)
 
 ![timeline backend](https://prawas.s3.amazonaws.com/timeline-back.png)
 
-## Установка
+## Installation
 
 ### composer.json
 
