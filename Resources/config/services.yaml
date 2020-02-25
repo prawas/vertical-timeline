@@ -18,3 +18,9 @@ services:
         resource: './../../Twig'
         tags:
             - { name: twig.runtime }
+
+    admin.vertical_timeline.item:
+        class: Onest\VerticalLeftRightTimelineBundle\Admin\ItemAdmin
+        arguments: [~, Onest\VerticalLeftRightTimelineBundle\Entity\Item, ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, label: Timeline, group: CMS }
