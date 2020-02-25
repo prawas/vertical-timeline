@@ -1,11 +1,11 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle\Entity;
+namespace Onest\VerticalLeftRightTimelineBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\VerticalLeftRightTimelineBundle\Repository\ItemRepository")
+ * @ORM\Entity(repositoryClass="Onest\VerticalLeftRightTimelineBundle\Repository\ItemRepository")
  * @ORM\Table(name="vertical_timeline_item")
  */
 class Item

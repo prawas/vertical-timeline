@@ -3,6 +3,7 @@
     "description": "This bundle provides a Vertical Left Right Timeline for Your Site",
     "type": "symfony-bundle",
     "license": "MIT",
+    "homepage": "https://github.com/prawas/vertical-timeline",
     "authors": [
         {
             "name": "prawas",
@@ -16,5 +17,9 @@
         "symfony/framework-bundle": "4.4.*",
         "symfony/templating": "4.4.*",
         "symfony/yaml": "4.4.*"
+    },
+    "target-dir": "Onest/VerticalLeftRightTimelineBundle",
+    "autoload": {
+        "psr-4": { "Onest\\VerticalLeftRightTimelineBundle": "" }
     }
 }

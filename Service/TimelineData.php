@@ -1,9 +1,9 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle\Service;
+namespace Onest\VerticalLeftRightTimelineBundle\Service;
 
 use Doctrine\ORM\EntityManagerInterface;
-use App\VerticalLeftRightTimelineBundle\Entity\Item as TimelineItem;
+use Onest\VerticalLeftRightTimelineBundle\Entity\Item as TimelineItem;
 
 class TimelineData
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle\Admin;
+namespace Onest\VerticalLeftRightTimelineBundle\Admin;
 
 use Sonata\AdminBundle\Admin\AbstractAdmin;
 use Sonata\AdminBundle\Datagrid\ListMapper;

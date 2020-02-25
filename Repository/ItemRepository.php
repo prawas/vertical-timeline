@@ -1,8 +1,8 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle\Repository;
+namespace Onest\VerticalLeftRightTimelineBundle\Repository;
 
-use App\VerticalLeftRightTimelineBundle\Entity\Item;
+use Onest\VerticalLeftRightTimelineBundle\Entity\Item;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
 

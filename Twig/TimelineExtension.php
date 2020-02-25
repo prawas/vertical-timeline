@@ -1,11 +1,11 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle\Twig;
+namespace Onest\VerticalLeftRightTimelineBundle\Twig;
 
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 
-use App\VerticalLeftRightTimelineBundle\Service\TimelineData;
+use Onest\VerticalLeftRightTimelineBundle\Service\TimelineData;
 
 class TimelineExtension extends AbstractExtension
 {

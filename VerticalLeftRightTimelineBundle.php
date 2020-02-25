@@ -1,6 +1,6 @@
 <?php
 
-namespace App\VerticalLeftRightTimelineBundle;
+namespace Onest\VerticalLeftRightTimelineBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
