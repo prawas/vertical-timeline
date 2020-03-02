@@ -9,6 +9,7 @@ use Sonata\AdminBundle\Form\FormMapper;
 use Symfony\Component\Form\Extension\Core\Type\NumberType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
 final class ItemAdmin extends AbstractAdmin
 {
@@ -18,17 +19,27 @@ final class ItemAdmin extends AbstractAdmin
         '_sort_by' => 'number',
     ];
 
+    protected $translationDomain = 'VerticalTimelineBundle';
+
+    protected $translator;
+
+    public function __construct($code, $class, $baseControllerName, TranslatorInterface $translator)
+    {
+        parent::__construct($code, $class, $baseControllerName);
+        $this->translator = $translator;
+    }
+
     protected function configureFormFields(FormMapper $formMapper)
     {
         $formMapper
             ->add('number', NumberType::class, [
-                'label' => 'Номер',
+                'label' => 'Number',
             ])
             ->add('title', TextType::class, [
-                'label' => 'Заголовок',
+                'label' => 'Title',
             ])
             ->add('description', TextareaType::class, [
-                'label' => 'Описание',
+                'label' => 'Description',
             ])
         ;
     }
@@ -45,9 +56,9 @@ final class ItemAdmin extends AbstractAdmin
     protected function configureListFields(ListMapper $listMapper)
     {
         $listMapper
-            ->addIdentifier('number', null, ['label' => 'Номер'])
-            ->addIdentifier('title', null, ['label' => 'Заголовок'])
-            ->addIdentifier('description', null, ['label' => 'Описание'])
+            ->addIdentifier('number')
+            ->addIdentifier('title')
+            ->addIdentifier('description')
         ;
     }
 }

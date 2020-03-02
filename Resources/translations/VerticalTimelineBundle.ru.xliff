@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="ru" datatype="plaintext" original="VerticalTimelineBundle.en.xliff">
+        <body>
+            <trans-unit id="number">
+                <source>Number</source>
+                <target>Номер</target>
+            </trans-unit>
+            <trans-unit id="title">
+                <source>Title</source>
+                <target>Заголовок</target>
+            </trans-unit>
+            <trans-unit id="description">
+                <source>Description</source>
+                <target>Описание</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
